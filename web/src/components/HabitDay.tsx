@@ -19,6 +19,9 @@ export function HabitDay({ defaultCompleted = 0, amount = 0, date }: HabitDayPro
   const dayAndMonth = dayjs(date).format('DD/MM')
   const dayOfWeek = dayjs(date).format('dddd')
 
+  const today = dayjs().startOf('day').toDate();
+  const isCurrentDay = dayjs(date).isSame(today);
+
   function handleCompletedChaged(completed: number) {
     setCompleted(completed)
   }
@@ -33,6 +36,7 @@ export function HabitDay({ defaultCompleted = 0, amount = 0, date }: HabitDayPro
           'bg-violet-700 border-violet-500': comlpetedPercentage >= 40 && comlpetedPercentage < 60,
           'bg-violet-600 border-violet-500': comlpetedPercentage >= 60 && comlpetedPercentage < 80,
           'bg-violet-500 border-violet-400': comlpetedPercentage >= 80,
+          'border-white border-4': isCurrentDay
         })}
       />
 
