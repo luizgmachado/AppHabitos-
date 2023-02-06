@@ -60,7 +60,7 @@ Server:
 
 ## 💻 Projeto
 
-O Aplicativo tem como funcionalidade listar os hábitos que o usuário deseja realizar durante a semana. É possível criar um novo hábito, selecionar quais dias esse hábito vai estar disponível e por fim, quando tiver feito, marcar a tarefa como concluída.
+O Aplicativo tem como funcionalidade listar os hábitos que o usuário deseja realizar durante a semana. É possível criar um novo hábito, selecionar quais dias esse hábito vai estar disponível e por fim, quando estiver feito, marcar a tarefa como concluída.
 
 Os hábitos possuem uma tonalidade de cor diferente conforme são concluídos.
 
